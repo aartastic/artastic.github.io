@@ -11,9 +11,9 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="try.css" />
-    <link rel="icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" />
   </head>
   <body>
     <header>
@@ -57,7 +57,7 @@
             </button>
             <button
               onclick="downloadCanvas()"
-              id="clear"
+              id="download"
               class="glowing-btn download"
             >
               <span class="glowing-txt"
@@ -88,7 +88,6 @@
                 value="5"
                 min="5"
                 max="100"
-                value="10"
               />
               <span class="range-value"></span>
             </div>
@@ -99,6 +98,34 @@
             >
             <input type="color" id="brush-color" value="#000000" class="" />
             <br />
+            <label
+              for="shape-selector"
+              class="form-label fw-bolder fs-4 brush-size glitch"
+              >Shape:</label
+            >
+            <select id="shape-selector" class="form-select">
+              <option value="line">Line</option>
+              <option value="rectangle">Rectangle</option>
+              <option value="circle">Circle</option>
+              <option value="oval">Oval</option>
+              <option value="trapezium">Trapezium</option>
+              <option value="triangle">Triangle</option>
+              <option value="star">Star</option>
+              <option value="diamond">Diamond</option>
+              <option value="pentagon">Pentagon</option>
+              <option value="hexagon">Hexagon</option>
+              <option value="heptagon">Heptagon</option>
+              <option value="octagon">Octagon</option>
+              <option value="arrow">Arrow</option>
+              <option value="plus">Plus</option>
+            </select>
+            <br />
+            <input type="checkbox" id="fill-mode" />
+            <label
+              for="fill-mode"
+              class="form-label fw-bolder fs-4 brush-size glitch"
+              >Fill Mode</label
+            >
           </div>
         </li>
       </ul>
@@ -109,10 +136,28 @@
         <p class="end-p">All Rights Reserved</p>
       </div>
       <ul class="end-ul">
-        <li class="end-li"><a class="end-a" href="https://www.linkedin.com/in/rudraksh-kapoor/">LinkedIn</a></li>
-        <li class="end-li"><a class="end-a" href="mailto:rudraksh746.be22@chitkara.edu.in">Email</a></li>
-        <li class="end-li"><a class="end-a" href="https://www.instagram.com/mr_rudr.007/">Instagram</a></li>
-        <li class="end-li"><a class="end-a" href="https://github.com/aartastic/artastic.github.io">Github</a></li>
+        <li class="end-li">
+          <a class="end-a" href="https://www.linkedin.com/in/rudraksh-kapoor/"
+            >LinkedIn</a
+          >
+        </li>
+        <li class="end-li">
+          <a class="end-a" href="mailto:rudraksh746.be22@chitkara.edu.in"
+            >Email</a
+          >
+        </li>
+        <li class="end-li">
+          <a class="end-a" href="https://www.instagram.com/mr_rudr.007/"
+            >Instagram</a
+          >
+        </li>
+        <li class="end-li">
+          <a
+            class="end-a"
+            href="https://github.com/aartastic/artastic.github.io"
+            >Github</a
+          >
+        </li>
         <li class="end-li">
           <p>👋</p>
         </li>
