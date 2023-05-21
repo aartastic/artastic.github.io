@@ -27,6 +27,7 @@ body {
 .main {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   background-size: cover;
   background-blend-mode: multiply;
@@ -51,6 +52,8 @@ body {
   cursor: crosshair;
   align-self: center;
   padding: 0;
+  position: relative;
+  left: 70px;
 }
 header {
   background: rgba(0, 0, 0, 0.964);
@@ -68,14 +71,52 @@ header {
   align-items: center;
   justify-content: center;
   min-height: 5em;
-  margin-left: 2em;
 }
-.brush-color,
-.brush-size {
+.fill{
+  position: relative;
+  top: 50px;
   color: rgb(251, 251, 251);
   font-family: "PFBeauSansPro";
   margin: 0;
   text-shadow: 1px 1px aqua;
+}
+.shape{
+  position: absolute;
+  top: 100px;
+  color: rgb(251, 251, 251);
+  font-family: "PFBeauSansPro";
+  margin: 0;
+  text-shadow: 1px 1px aqua;
+}
+#shape-selector{
+  width:auto;
+  position: relative;
+  top:100px;
+}
+#fill-mode{
+  position: relative;
+  top: 92px;
+  left: 80px;
+}
+.brush-size {
+  position: absolute;
+  top: -100px;
+  color: rgb(251, 251, 251);
+  font-family: "PFBeauSansPro";
+  margin: 0;
+  text-shadow: 1px 1px aqua;
+}
+.brush-color{
+  position: absolute;
+  top: 100px;
+  color: rgb(251, 251, 251);
+  font-family: "PFBeauSansPro";
+  margin: 0;
+  text-shadow: 1px 1px aqua;
+}
+.colorpicker{
+  position: absolute;
+  top: 620px;
 }
 .box-l {
   text-align: center;
@@ -196,7 +237,7 @@ header {
     transform: rotate(-15deg);
   }
 }
-.end-d{
+.end-d {
   display: flex;
   flex-direction: column;
   text-align: center;
