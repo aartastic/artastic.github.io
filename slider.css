@@ -1,0 +1,136 @@
+.box-n {
+    /*height: 100%;
+    display: flex;*/
+    align-items: center;
+    justify-content: center;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+  }
+  
+  .box-n h4 {
+    color: #999;
+    font-weight: 500;
+  }
+  
+  .box-n h4:after {
+    content: "%";
+    padding-left: 1px;
+  }
+  
+  .box-n input[type="range"] {
+    outline: 0;
+    border: 0;
+    border-radius: 500px;
+    width: 275px;
+    max-width: 100%;
+    margin: 24px 0 16px;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .box-n input[type="range"] {
+      overflow: hidden;
+      height: 40px;
+      -webkit-appearance: none;
+      background-color: #ddd;
+    }
+  
+    .box-n input[type="range"]::-webkit-slider-runnable-track {
+      height: 40px;
+      -webkit-appearance: none;
+      color: #444;
+      transition: box-shadow 0.2s ease-in-out;
+    }
+  
+    .box-n input[type="range"]::-webkit-slider-thumb {
+      width: 40px;
+      -webkit-appearance: none;
+      height: 40px;
+      cursor: ew-resize;
+      background: #fff;
+      box-shadow: -340px 0 0 320px #1597ff, inset 0 0 0 40px #1597ff;
+      border-radius: 50%;
+      transition: box-shadow 0.2s ease-in-out;
+      position: relative;
+    }
+  
+    .box-n input[type="range"]:active::-webkit-slider-thumb {
+      background: #fff;
+      box-shadow: -340px 0 0 320px #1597ff, inset 0 0 0 3px #1597ff;
+    }
+  }
+  
+  .box-n input[type="range"]::-moz-range-progress {
+    background-color: #43e5f7;
+  }
+  
+  .box-n input[type="range"]::-moz-range-track {
+    background-color: #9a905d;
+  }
+  
+  .box-n input[type="range"]::-ms-fill-lower {
+    background-color: #43e5f7;
+  }
+  
+  .box-n input[type="range"]::-ms-fill-upper {
+    background-color: #9a905d;
+  }
+  
+  #h4-container {
+    width: 400px;
+    max-width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  #h4-container #h4-subcontainer {
+    width: 100%;
+    position: relative;
+  }
+  
+  #h4-container #h4-subcontainer h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%; /* Move the label to the center vertically */
+    left: 44.5%; /* Move the label to the center horizontally */
+    width: 40px;
+    height: 40px;
+    color: #fff !important;
+    font-size: 12px;
+    transform-origin: center -10px;
+    transform: translate(-50%, -50%); /* Center the label vertically and horizontally */
+    transition: margin-top 0.15s ease-in-out, opacity 0.15s ease-in-out;
+  }
+  
+  #h4-container #h4-subcontainer h4 span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #1597ff;
+    border-radius: 0 50% 50% 50%;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+  
+  input:not(:active) + #h4-container h4 {
+    opacity: 0;
+    margin-top: -50px;
+    pointer-events: none;
+  }
+  
+  .input-range-vertical {
+    writing-mode: bt-lr;
+    /* Set vertical writing mode */
+    height: 400px;
+    /* Set the desired height of the vertical slider */
+    transform: rotate(-90deg);
+    /* Rotate the slider counter-clockwise */
+    -webkit-appearance: slider-vertical;
+    /* Set the appearance to vertical */
+  }
+  
