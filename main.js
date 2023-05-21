@@ -13,12 +13,14 @@ let brushSize = brushSizeSlider.value;
 let brushColor = document.getElementById("brush-color").value;
 let history = [ctx.getImageData(0, 0, canvas.width, canvas.height)];
 let historyIndex = 0;
+ctx.imageSmoothingEnabled = true;
 function draw(e) {
   if (!isDrawing) return;
   const shape = shapeSelector.value;
   ctx.strokeStyle = brushColor;
   ctx.fillStyle = brushColor;
   ctx.lineWidth = brushSize;
+  ctx.imageSmoothingEnabled = true;
 
   if (shape === "line") {
     drawLine(e);
